@@ -6,9 +6,16 @@ You are (probably) in luck if you just want it to quit segfaulting, get it visib
 
 ### What Will work (as of LXQt 1.0)  
 * Application Menu (panel)  
+* Directory Menu (panel)  
+* Sensors (panel)  
+* Spacer (panel)
+* Volume (panel) (tested with alsa & pipewire-alsa)
+* World Clock (panel)
+* Backlight (panel & settings)  
 
 ### What *Won't* work (as of LXQt 1.0)  
-* Task manager (panel) (just unfunctional)  
-* Desktop switcher (panel) (**causes segfault**)  
+* Task Manager (panel) (just unfunctional)  
+* Desktop Switcher (panel) (**causes segfault**)  
+* Keyboard State Indicator??? (panel) (just unfunctional) (possibly something on my side, please confirm)
 
 ## How to: the Panel
