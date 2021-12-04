@@ -6,6 +6,7 @@ This is a guide on how to get LXQt/LXQt components (such as the panel) working w
 * Application Menu (panel)  
 
 ### What *Won't* work (as of LXQt 1.0)  
-* Task manager (panel)  
+* Task manager (panel) (just unfunctional)  
+* Desktop switcher (panel) (**causes segfault**)  
 
 ## How to: the Panel
