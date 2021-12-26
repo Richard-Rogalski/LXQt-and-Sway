@@ -35,7 +35,7 @@ gaps bottom 32
 exec --no-startup-id lxqt-panel
 no_focus [app_id="lxqt-panel"]
 for_window [app_id="lxqt-panel"] floating enable, sticky enable, border none, move down 550 px
-# You can use ppt (percantage point) instead of px (pixels). 550px works for a 1080p monitor with a 32px high bar
+# You can use ppt (percantage point) instead of px (pixels). 550px seems to work for a 1080p monitor with a 32px high bar
 ```
 
 ## How to: Notifications
