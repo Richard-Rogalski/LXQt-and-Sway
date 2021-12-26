@@ -1,8 +1,8 @@
 # LXQt-and-Sway!
 
 This is a guide on how to get LXQt/LXQt components (such as the panel) working with Sway.  
-If you use another wayland compositor, you're out of luck in this guide for getting it to dock on an edge of your screen, not having windows overlap it, etc.  
-You are (probably) in luck if you just want it to quit segfaulting, get it visible on your screen, etc. (at least with wlroots based compositors, no promises otherwise)
+If you aren't using Sway but are using another wlroots based compositor (Wayfire, KwinFT, etc) what does and doesn't function should be the same, but you're on your own trying to get it to behave properly. 
+I have not tested wayland compositors other than wlroots based ones, but I wouldn't expect too much to be different. 
 
 ### What Will work (as of LXQt 1.0)  
 * Notifications  
@@ -15,7 +15,7 @@ You are (probably) in luck if you just want it to quit segfaulting, get it visib
 * Quick Launch **???** (panel) (seems functional, can't test, please confirm)
 * Backlight/Brightness (panel & settings)  
 * File Associations (settings)
-* Appearance - Cursor (settings)  
+* Appearance - Cursor (settings) (*probably wlroots only*)  
 
 ### What *Won't* work (as of LXQt 1.0)  
 * Task Manager (panel) (just unfunctional)  
