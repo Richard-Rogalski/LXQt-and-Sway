@@ -5,6 +5,7 @@ If you use another wayland compositor, you're out of luck in this guide for gett
 You are (probably) in luck if you just want it to quit segfaulting, get it visible on your screen, etc. (at least with wlroots based compositors, no promises otherwise)
 
 ### What Will work (as of LXQt 1.0)  
+* Notifications  
 * Application Menu (panel)  
 * Directory Menu (panel)  
 * Sensors (panel)  
@@ -25,3 +26,23 @@ You are (probably) in luck if you just want it to quit segfaulting, get it visib
 
 See also: LXQt's wayland TODO on their wiki here: <https://github.com/lxqt/lxqt/wiki/TODO-for-Wayland>
 ## How to: the Panel
+To get the panel working, install lxqt-panel and make sure you **don't have the desktop switcher widget on the bar.**
+Then, add these lines to your Sway config file:  
+```
+## LXQt-panel config
+gaps bottom 32
+# This is so the bar doesn't cover tiled windows
+exec --no-startup-id lxqt-panel
+no_focus [app_id="lxqt-panel"]
+for_window [app_id="lxqt-panel"] floating enable, sticky enable, border none, move down 550 px
+# You can use ppt (percantage point) instead of px (pixels). 550px works for a 1080p monitor with a 32px high bar
+```
+
+## How to: Notifications
+To get notifications working, install lxqt-notificationd and add the following to your Sway config file:  
+```
+## LXQt-notificationd config
+exec --no-startup-id lxqt-notificationd
+no_focus [app_id="lxqt-notificationd"]
+for_window [app_id="lxqt-notificationd"] floating enable, sticky enable, border none, move down 400 px, move right 700 px
+```
