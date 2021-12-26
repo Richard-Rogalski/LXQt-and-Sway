@@ -37,7 +37,7 @@ no_focus [app_id="lxqt-panel"]
 for_window [app_id="lxqt-panel"] floating enable, sticky enable, border none, move down 550 px
 # You can use ppt (percantage point) instead of px (pixels). 550px seems to work for a 1080p monitor with a 32px high bar
 ```
-*note: the panel might be 100% invisible by default. try finding it and right clicking it and change its theme*
+*note: the panel might be 100% invisible by default. try finding it, right clicking it, and set a background color/image*
 
 ## How to: Notifications
 To get notifications working, install lxqt-notificationd and add the following to your Sway config file:  
